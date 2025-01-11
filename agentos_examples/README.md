@@ -1,19 +1,19 @@
 #### Depends
 
 ```bash
-sudo apt install libjsoncpp-dev
+sudo apt install libjsoncpp-dev #For Ubuntu/Debian systems
+brew install jsoncpp #For macOS systems
 ```
 
 #### Compile
 
 ```bash
 cd ~/agent_ws
-rm src/agentos_sdk/agentos_examples/CATKIN_IGNORE
+rm src/agentos_examples/CATKIN_IGNORE
 catkin build
 ```
 
 #### Run
-
 
 ```bash
 source devel/setup.bash

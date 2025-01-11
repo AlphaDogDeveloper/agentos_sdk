@@ -12,25 +12,26 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(JSONCPP jsoncpp)
+pkg_check_modules(JSONCPP REQUIRED   ${JSONCPP_LIBRARIES})
 
 catkin_package()
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${JSONCPP_INCLUDE_DIRS}
 )
 
 add_executable(hold_skill_node cplusplus/hold_skill.cpp)
-target_link_libraries(hold_skill_node ${catkin_LIBRARIES} jsoncpp)
+target_link_libraries(hold_skill_node ${catkin_LIBRARIES}   ${JSONCPP_LIBRARIES})
 
 add_executable(invoke_skill_node cplusplus/invoke_skill.cpp)
-target_link_libraries(invoke_skill_node ${catkin_LIBRARIES} jsoncpp)
+target_link_libraries(invoke_skill_node ${catkin_LIBRARIES}   ${JSONCPP_LIBRARIES})
 
 add_executable(skill_contrl_node cplusplus/skill_contrl.cpp)
-target_link_libraries(skill_contrl_node ${catkin_LIBRARIES} jsoncpp)
+target_link_libraries(skill_contrl_node ${catkin_LIBRARIES}   ${JSONCPP_LIBRARIES})
 
 add_executable(skill_status_node cplusplus/skill_status.cpp)
-target_link_libraries(skill_status_node ${catkin_LIBRARIES} jsoncpp)
+target_link_libraries(skill_status_node ${catkin_LIBRARIES}   ${JSONCPP_LIBRARIES})
 
 catkin_install_python(PROGRAMS
   python/hold_skill.py
