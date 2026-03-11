@@ -24,6 +24,7 @@ AgentOS SDK directory structure:
 
 - [agent_msgs](https://github.com/AlphaDogDeveloper/agentos_sdk/tree/master/agent_msgs) Interfaces related to Agent Skills, including skill message definitions, skill invocation, and control.
 - [ros_alphadog](https://github.com/AlphaDogDeveloper/agentos_sdk/tree/master/ros_alphadog) Interfaces related to motion control, for obtaining the motion state of the robotic dog.
+- [alphago_slam](https://github.com/AlphaDogDeveloper/agentos_sdk/tree/master/alphago_slam) Interfaces related to SLAM, including mapping and localization status message definitions.
 - [docs](https://github.com/AlphaDogDeveloper/agentos_sdk/tree/master/docs) Documents.
 - [agentos_examples](https://github.com/AlphaDogDeveloper/agentos_sdk/tree/master/agentos_examples) Code examples.
 

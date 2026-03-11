@@ -1,0 +1,2 @@
+std_msgs/Header header
+alphago_slam/AlphaSlamStatus status
