@@ -98,6 +98,9 @@ add_service_files(
   ReleaseHold.srv
   SetString.srv
   SetInt32.srv
+  SetFloat32.srv
+  SetFloat32Array.srv
+  SetAudioData.srv
 )
 
 ## Generate actions in the 'action' folder
